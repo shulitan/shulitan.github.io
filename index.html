@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shuli Tan</title>
+    <!-- Add Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,9 +30,55 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
+        
+        .nav-icons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .nav-icons a {
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .nav-icons a:hover {
+            transform: scale(1.1);
+        }
+        
+        .nav-icons i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .icon-label {
+            display: block;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
+    <nav class="nav-icons">
+        <a href="#experience">
+            <i class="fas fa-briefcase"></i>
+            <span class="icon-label">Previous Experience</span>
+        </a>
+        <a href="#film-portfolio">
+            <i class="fas fa-film"></i>
+            <span class="icon-label">Film Portfolio</span>
+        </a>
+        <a href="#scripting-portfolio">
+            <i class="fas fa-code"></i>
+            <span class="icon-label">Scripting Portfolio</span>
+        </a>
+        <a href="#contact">
+            <i class="fas fa-envelope"></i>
+            <span class="icon-label">Contact Me</span>
+        </a>
+    </nav>
     <h1>Shuli Tan</h1>
     <img src="shulitan_headshot.jpg" alt="Shuli Tan">
 </body>
